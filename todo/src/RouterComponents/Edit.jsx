@@ -39,13 +39,10 @@ class Edit extends React.Component {
 
     }
 	render() {
-        console.log(this.props)
-        let { todoArr,match} = this.props
-        let item  = todoArr.find(item=>item.id===match.params.id)
         
 		return (
-			<div className=  "col-4 offset-3">
-               <p>{item.item}</p>
+			<div className=  "col-6 offset-3 p-5 mt-5" style={{ backgroundColor: "#CDDC39" }}>
+               <h5 className="p-2">Edit Item</h5>
 				<input
 					className="form-control"
 					name="item"

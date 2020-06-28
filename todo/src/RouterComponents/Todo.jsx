@@ -73,6 +73,7 @@ class Todo extends React.Component {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-6" style={{ height: "860px", backgroundColor: "#FFB74D" }}>
+                        <h3 className="text-primary float-right p-2">Todo </h3>
 
                         <div className="m-md-5 m-sm-2">
                             <input
@@ -88,7 +89,7 @@ class Todo extends React.Component {
                         <div className="m-md-5 m-sm-2">
                             {arr &&
                                 arr.map((item) => (
-                                    <div className="col-12 border">
+                                    <div className="col-12 card">
                                         <div className="row p-3 h4" key={item.id}>
                                             <div className="col-1">
                                                 <input onClick={() => checkBox(item.id)} type="checkbox" style={{ width: "20px", height: "20px" }}></input>
@@ -117,24 +118,30 @@ class Todo extends React.Component {
                         }
                     </div>
 
-                    <div className="col-6 pt-md-5 pl-md-5 pb-md-5 p-sm-2" style={{ height: "860px", backgroundColor: "#CDDC39" }}>
-                        <button className="btn btn-danger float-right mb-5" onClick={() => authUser(false)}>LogOut</button>
-                        <button className="btn btn-primary" onClick={this.handleCompletedTask}>Show Completed Task</button>
+                    <div className="col-6 pt-md-2 pl-md-4 pb-md-5 p-sm-2" style={{ height: "860px", backgroundColor: "#CDDC39" }}>
+                        <div className="clearfix">
+                            <h3 className="text-primary float-left">Application </h3>
+                            <button className="btn btn-danger float-right mb-3 " onClick={() => authUser(false)}>LogOut</button>
+                        </div>
+                        <div >
+                            <button className="btn btn-primary" onClick={this.handleCompletedTask}>Show Completed Task</button>
+                        </div>
+
                         {
                             flag &&
                             <div className="row h4 p-2">
                                 <div className="offset-1 col-10">
 
                                     <div className="">
-                                    {
-                                        cartArr && cartArr.map(item =>
-                                            <>
-                                                <div >
-                                                    <p style={{ textDecoration: 'line-through', color: "green" }}>{item.item}</p>
-                                                </div>
-                                            </>
-                                        )
-                                    }
+                                        {
+                                            cartArr && cartArr.map(item =>
+                                                <>
+                                                    <div >
+                                                        <p style={{ textDecoration: 'line-through', color: "green" }}>{item.item}</p>
+                                                    </div>
+                                                </>
+                                            )
+                                        }
                                         <FontAwesomeIcon icon={faTrash} onClick={() => clearCompleteTask()} />
                                     </div>
                                 </div>
