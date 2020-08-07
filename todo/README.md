@@ -1,10 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Project Name: BookWorld
+## Project Name: Todo Application
 
 ### Description
-It contains some information about books which are stored locally.
-It conatins three pages as listing of books and information about perticular book and has cart.
+User can keep the track of todo task using this application
 
 <a href = "https://todoreactapplications.netlify.app/">
   <button style = "background:red,padding:5px">Demo Link</button>
