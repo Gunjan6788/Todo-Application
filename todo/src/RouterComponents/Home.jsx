@@ -55,7 +55,6 @@ class Home extends React.Component {
 
 					<button className='btn btn-info ml-5 mt-3' onClick={this.handleClick}>Login</button>
 				</div>
-
 				{
 					isAuth && <Redirect to='/todo' />
 				}

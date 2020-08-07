@@ -8,6 +8,7 @@ import Pagination from '../Component/Pagination'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTrash, faEdit } from '@fortawesome/free-solid-svg-icons'
 
+
 class Todo extends React.Component {
     constructor(props) {
         super(props);
@@ -72,7 +73,7 @@ class Todo extends React.Component {
         return (
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-6" style={{ height: "860px", backgroundColor: "#FFB74D" }}>
+                    <div className="col-6" style={{ height: "1000px", backgroundColor: "#FFB74D" }}>
                         <h3 className="text-primary float-right p-2">Todo </h3>
 
                         <div className="m-md-5 m-sm-2">
@@ -118,7 +119,7 @@ class Todo extends React.Component {
                         }
                     </div>
 
-                    <div className="col-6 pt-md-2 pl-md-4 pb-md-5 p-sm-2" style={{ height: "860px", backgroundColor: "#CDDC39" }}>
+                    <div className="col-6 pt-md-2 pl-md-4 pb-md-5 p-sm-2" style={{ height: "1000px", backgroundColor: "#CDDC39" }}>
                         <div className="clearfix">
                             <h3 className="text-primary float-left">Application </h3>
                             <button className="btn btn-danger float-right mb-3 " onClick={() => authUser(false)}>LogOut</button>
