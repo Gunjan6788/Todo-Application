@@ -14,7 +14,7 @@ To know better about project ,some images of project are shown below:
 <li>to start the app: username = admin and password = admin</li>
 <br/>
 <li>Home page</li>
-<img src="/public/img1.png"/>
+<img src="/todo/public/img1.png"/>
 
 
 ### Getting Started
